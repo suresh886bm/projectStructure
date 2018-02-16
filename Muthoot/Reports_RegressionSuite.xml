@@ -1,0 +1,7 @@
+<suite name="Reports" verbose="1">
+	<test name="RegressionResults">
+		<classes>
+			<class name="com.Cogniphy.Protection.Muthoot.TestSuites.Reports_TestSuite" />
+		</classes>
+	</test>
+</suite>

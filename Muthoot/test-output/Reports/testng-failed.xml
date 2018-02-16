@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Reports]">
+  <test name="ReportsResult">
+    <classes>
+      <class name="com.Cogniphy.Protection.Muthoot.TestSuites.Reports_TestSuite"/>
+    </classes>
+  </test> <!-- ReportsResult -->
+  <test name="ReportsResult(failed)">
+    <classes>
+      <class name="com.Cogniphy.Protection.Muthoot.TestSuites.Reports_TestSuite">
+        <methods>
+          <include name="toEndTest"/>
+          <include name="beforeMethod"/>
+          <include name="afterTest"/>
+          <include name="TC_0001_Login"/>
+          <include name="loadlog4j"/>
+          <include name="afterMethod"/>
+        </methods>
+      </class> <!-- com.Cogniphy.Protection.Muthoot.TestSuites.Reports_TestSuite -->
+    </classes>
+  </test> <!-- ReportsResult(failed) -->
+</suite> <!-- Failed suite [Reports] -->
