@@ -5,7 +5,7 @@
 
 	<groupId>com.Cogniphy.Protection</groupId>
 	<artifactId>Muthoot</artifactId>
-	<version>0.0.1-SNAPSHOT</version>
+	<version>0.0.2-SNAPSHOT</version>
 	<packaging>jar</packaging>
 
 	<name>Muthoot</name>
@@ -68,10 +68,12 @@
 					<artifactId>maven-surefire-plugin</artifactId>
 					<version>2.20.1</version>
 					<configuration>
+					
 						<suiteXmlFiles>
 							<suiteXmlFile>ReportsSuite.xml</suiteXmlFile>
 							<suiteXmlFile>ERTPerformance_Suite.xml</suiteXmlFile>
 						</suiteXmlFiles>
+						
 					</configuration>
 				</plugin>
 

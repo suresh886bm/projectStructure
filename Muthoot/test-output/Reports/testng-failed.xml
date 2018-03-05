@@ -10,12 +10,18 @@
     <classes>
       <class name="com.Cogniphy.Protection.Muthoot.TestSuites.Reports_TestSuite">
         <methods>
-          <include name="toEndTest"/>
+          <include name="beforeClass"/>
+          <include name="TC_001_Login"/>
+          <include name="TC_002_Validate_ERTReported_At_Time_with_Daily_Report"/>
+          <include name="TC_004_IncidentRoom_BranchNames_Validation"/>
           <include name="beforeMethod"/>
-          <include name="afterTest"/>
-          <include name="TC_0001_Login"/>
+          <include name="TC_008_attendanceValidationForeachERT"/>
+          <include name="TC_003_Validate_No_of_Branches_Visted"/>
+          <include name="TC_005_ADT_AlarmTime_Vrfction_BN_Summ_ND_IncRoom"/>
           <include name="loadlog4j"/>
           <include name="afterMethod"/>
+          <include name="TC_006_ADT_RecievedTime_Verification"/>
+          <include name="TC_007_odoMeter_Reading_Valiadtion"/>
         </methods>
       </class> <!-- com.Cogniphy.Protection.Muthoot.TestSuites.Reports_TestSuite -->
     </classes>

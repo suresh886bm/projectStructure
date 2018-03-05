@@ -40,6 +40,7 @@ public class ReportsSiute extends BaseClass {
 
 	@Test
 	public void ERT_SUMM_01_Verify_HomePage() throws Exception {
+		
 		HomePage.verifyHomePageMainMenuLinks();
 		HomePage.verifyHomePageQuickLinks();
 

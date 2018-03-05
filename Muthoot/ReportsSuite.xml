@@ -1,5 +1,5 @@
-<suite name="Reports" verbose="1">
-	<test name="ReportsResult">
+<suite name="Reports Module" verbose="3">
+	<test name="Reports Module Result">
 		
 		<classes>
 			<class name="com.Cogniphy.Protection.Muthoot.TestSuites.ReportsSuite" />
