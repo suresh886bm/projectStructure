@@ -19,6 +19,7 @@ public class LogIn extends BaseClass {
 		log.info("Password entered");
 		driver.findElement(By.name(reader.get("LogIn_name"))).click();
 		log.info("Clicked on Login button");
+		driver.manage().window().maximize();
 	}
 	public static void fireFox_LogIn() throws ATUTestRecorderException {
 		

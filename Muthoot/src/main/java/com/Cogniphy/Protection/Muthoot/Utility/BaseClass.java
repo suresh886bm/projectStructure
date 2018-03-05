@@ -20,6 +20,7 @@ import org.testng.ITestResult;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.AfterTest;
+import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.BeforeTest;
 
@@ -73,7 +74,7 @@ public class BaseClass {
 		if (browser.equals("chrome")) {
 			System.setProperty("webdriver.chrome.driver", "chromedriver.exe");
 			driver = new ChromeDriver();
-			driver.get(reader.get("StageURL"));
+			driver.get(reader.get("TestURL"));
 		} else if (browser.equals("firefox")) {
 			System.setProperty("webdriver.gecko.driver", "geckodriver.exe");
 			driver = new FirefoxDriver();
@@ -97,6 +98,10 @@ public class BaseClass {
 	public void afterMethod(ITestResult result) throws IOException {
 		getResult(result);
 	}
+	@BeforeClass
+	public void beforeClass() throws ATUTestRecorderException {
+		LogIn.chrome_LogIn();
+	}
 
 	@AfterClass
 	public void toEndTest() {
@@ -106,6 +111,8 @@ public class BaseClass {
 	@AfterTest
 	public void afterTest() throws ATUTestRecorderException {
 		/*recorder.stop();*/
+		System.gc();
+		
 	}
 
 }

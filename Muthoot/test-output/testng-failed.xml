@@ -3,19 +3,26 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test verbose="2" name="Default test">
     <classes>
-      <class name="com.Cogniphy.Protection.Muthoot.TestSuites.Reports_TestSuite"/>
+      <class name="com.Cogniphy.Protection.Muthoot.TestSuites.ReportsSiute"/>
     </classes>
   </test> <!-- Default test -->
   <test name="Default test(failed)">
     <classes>
-      <class name="com.Cogniphy.Protection.Muthoot.TestSuites.Reports_TestSuite">
+      <class name="com.Cogniphy.Protection.Muthoot.TestSuites.ReportsSiute">
         <methods>
+          <include name="ERT_SUMM_16_Verify_ERTColumn"/>
+          <include name="ERT_SUMM_46_Validate_total_Count"/>
+          <include name="beforeClass"/>
+          <include name="ERT_SUMM_35_Validate_Total_KM_run_by_ERT"/>
+          <include name="toEndTest"/>
           <include name="beforeMethod"/>
-          <include name="attendanceValidationForeachERT"/>
+          <include name="ERT_SUMM_09_Verify_ReportTitle"/>
+          <include name="ERT_SUMM_33_34_Verify_KM_coveredIn_ADT"/>
           <include name="loadlog4j"/>
+          <include name="afterTest"/>
           <include name="afterMethod"/>
         </methods>
-      </class> <!-- com.Cogniphy.Protection.Muthoot.TestSuites.Reports_TestSuite -->
+      </class> <!-- com.Cogniphy.Protection.Muthoot.TestSuites.ReportsSiute -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

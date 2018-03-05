@@ -1,0 +1,8 @@
+<suite name="Reports" verbose="1">
+	<test name="ReportsResult">
+		
+		<classes>
+			<class name="com.Cogniphy.Protection.Muthoot.TestSuites.ReportsSuite" />
+		</classes>
+	</test>
+</suite>

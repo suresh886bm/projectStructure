@@ -2,9 +2,8 @@ package com.Cogniphy.Protection.Muthoot.TestSuites;
 
 import java.util.ArrayList;
 import java.util.List;
-import java.util.concurrent.TimeUnit;
-
 import org.apache.log4j.Logger;
+import org.testng.annotations.AfterTest;
 import org.testng.annotations.Test;
 
 import com.Cogniphy.Protection.Muthoot.Reports.ERTDaily_Report;
@@ -14,6 +13,8 @@ import com.Cogniphy.Protection.Muthoot.SLA.Incident_Room;
 import com.Cogniphy.Protection.Muthoot.Utility.BaseClass;
 import com.Cogniphy.Protection.Muthoot.Utility.LogIn;
 import com.Cogniphy.Protection.Muthoot.Utility.Utility;
+
+import atu.testrecorder.exceptions.ATUTestRecorderException;
 
 public class Reports_TestSuite extends BaseClass {
 	private static final Logger log = Logger.getLogger(Reports_TestSuite.class.getName());
@@ -31,37 +32,35 @@ public class Reports_TestSuite extends BaseClass {
 	static List<String> odoMtrEndreadings = new ArrayList<String>();
 	static List<String> ertNamess = new ArrayList<String>();
 
-	@Test(priority =1)
-	public void Login() throws Exception {
-
-		LogIn.chrome_LogIn();
+	@Test()
+	public void TC_001_Login() throws Exception {
 
 		
-		/*ERTDaily_Report.navigate_To_Reports();
+
+		Utility.navigate_To_Reports();
 		ERTDaily_Report.fetch_Daily_report();
 		noFromDaily = ERTDaily_Report.noOf_Branches_visitedBy("KL/KCH/01");
 		DailyrepoTimes.addAll(ERTDaily_Report.reportAt_Time());
 
-		ERTSummay_Report.navigate_to_ERTSummary_Report();
-		ERTSummay_Report.fetchSummuryRepot();
+		Utility.navigate_To_Reports();
+		//ERTSummay_Report.fetchSummuryRepot();
 		noFromSumm = ERTSummay_Report.noOf_Branches_vistedBy("KL/KCH/01");
-		summRepoTimes.addAll(ERTSummay_Report.fetch_ertReport_Time());
+		summRepoTimes.addAll(ERTSummay_Report.ertReportTime());
 		summRoomBranches.addAll(ERTSummay_Report.summBranch_Names());
 		summActualADTTimes.addAll(ERTSummay_Report.actualADTtimings());
 		aDTRecivedTimes.addAll(ERTSummay_Report.aDTRecivedtimings());
 		odoMtrStreadings.addAll(ERTSummay_Report.odometr_StartValue());
 		odoMtrEndreadings.addAll(ERTSummay_Report.odometr_EndValue());
 		ertNamess.addAll(ERTSummay_Report.eRTNames());
-		
-	    Incident_Room.navigate_to_Incident_room();
+
+		Incident_Room.navigate_to_Incident_room();
 		inciRoomBranches.addAll(Incident_Room.incident_BranchNames());
 		incActualADTtimes.addAll(Incident_Room.incident_ActualDATtimes());
-		*/
 
 	}
 
-	@Test(priority =2, enabled = false)
-	public void Validate_ERTReported_At_Time_with_Daily_Report() throws Exception {
+	@Test()
+	public void TC_002_Validate_ERTReported_At_Time_with_Daily_Report() throws Exception {
 
 		for (int i = 0; i < DailyrepoTimes.size(); i++) {
 			for (int j = 0; j < summRepoTimes.size(); j++) {
@@ -75,16 +74,16 @@ public class Reports_TestSuite extends BaseClass {
 
 	}
 
-	@Test(priority =3, enabled = false)
-	public void Validate_No_of_Branches_Visted() throws Exception {
+	@Test()
+	public void TC_003_Validate_No_of_Branches_Visted() throws Exception {
 
 		if (noFromDaily.equals(noFromSumm)) {
 			log.info("noOf Branches from Daily:" + noFromDaily + "=" + noFromSumm);
 		}
 	}
 
-	@Test(priority =4, enabled = false)
-	public void IncidentRoom_BranchNames_Validation() throws Exception {
+	@Test()
+	public void TC_004_IncidentRoom_BranchNames_Validation() throws Exception {
 		for (int i = 0; i < summRoomBranches.size(); i++) {
 			for (int j = 0; j < inciRoomBranches.size(); j++) {
 				if (summRoomBranches.get(i).equals(inciRoomBranches.get(j))) {
@@ -99,8 +98,8 @@ public class Reports_TestSuite extends BaseClass {
 
 	}
 
-	@Test(priority =5, enabled = false)
-	public void ADT_AlarmTime_Vrfction_BN_Summ_ND_IncRoom() {
+	@Test()
+	public void TC_005_ADT_AlarmTime_Vrfction_BN_Summ_ND_IncRoom() {
 		for (int i = 0; i < summActualADTTimes.size(); i++) {
 			for (int j = 0; j < incActualADTtimes.size(); j++) {
 				if (summActualADTTimes.get(i).equals(incActualADTtimes.get(j))) {
@@ -113,37 +112,47 @@ public class Reports_TestSuite extends BaseClass {
 		}
 	}
 
-	@Test(priority =6, enabled = false)
-	public void ADT_RecievedTime_Verification() {
+	@Test()
+	public void TC_006_ADT_RecievedTime_Verification() {
 		for (int i = 0; i < aDTRecivedTimes.size(); i++) {
 			Utility utility = new Utility();
-			boolean text = utility.validate(aDTRecivedTimes.get(i));
+			boolean text = utility.validateTimeFormat(aDTRecivedTimes.get(i));
 			log.info("Timeformat of ADT Recived :" + aDTRecivedTimes.get(i) + "=" + text);
 		}
 
 	}
 
-	@Test(priority =7, enabled = false)
-	public void odoMeter_Reading_Valiadtion() {
+	@Test()
+	public void TC_007_odoMeter_Reading_Valiadtion() {
 		for (i = 0; i < ertNamess.size(); i++) {
 			for (j = 0; j < odoMtrStreadings.size(); j++) {
 				for (k = 0; k < odoMtrEndreadings.size(); k++) {
 					if (i.equals(j) && j.equals(k)
 							&& Integer.parseInt(odoMtrStreadings.get(i)) < Integer.parseInt(odoMtrEndreadings.get(j))) {
 						log.info(ertNamess.get(i) + " = " + odoMtrStreadings.get(j) + " < " + odoMtrEndreadings.get(k));
+					}else if(Integer.parseInt(odoMtrStreadings.get(i)) > Integer.parseInt(odoMtrEndreadings.get(j))) {
+						log.info(ertNamess.get(i) + " = " + odoMtrStreadings.get(j) + " <> " + odoMtrEndreadings.get(k));
 					}
 
 				}
 
 			}
 		}
-
+;
 	}
-	@Test(priority =8)
-	public void attendanceValidationForeachERT() throws Exception {
-		ERTDaily_Report.navigate_To_Reports();
+
+	@Test()
+	public void TC_008_attendanceValidationForeachERT() throws Exception {
+		Utility.navigate_To_Reports();
 		RCR_Reports.navigateToRcR_Report();
 		RCR_Reports.openGaurdAttendanceReport();
-		Utility.selecteDateFor_GaurdAttendance();
+		Utility.bringDataForLastThreeMonth();
+		RCR_Reports.identify_PartialPresent();
+	}
+	@AfterTest
+	public void afterTest() throws ATUTestRecorderException {
+		//System.gc();
+		driver.quit();
+		
 	}
 }

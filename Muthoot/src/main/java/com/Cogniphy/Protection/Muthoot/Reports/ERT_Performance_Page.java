@@ -18,12 +18,7 @@ import com.Cogniphy.Protection.Muthoot.Utility.BaseClass;
 
 public class ERT_Performance_Page extends BaseClass {
 	private static final Logger log = Logger.getLogger(ERT_Performance_Page.class.getName());
-	/*
-	 * @FindBy(how = How.XPATH , using =
-	 * "//*[@class='sidebar-menu menu-open']/li[1]")
-	 * 
-	 * @CacheLookup WebElement ertPerformance ;
-	 */
+	
 
 	public static void navi_To_ERTPerfmnce() {
 		driver.findElement(By.xpath(reader.get("ertPerformance_xpath"))).click();
