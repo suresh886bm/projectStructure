@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="12" failed="0" total="12" passed="0">
+<testng-results skipped="8" failed="0" total="8" passed="0">
   <reporter-output>
   </reporter-output>
-  <suite name="ERTPerformance" duration-ms="4482" started-at="2018-03-05T12:24:48Z" finished-at="2018-03-05T12:24:52Z">
+  <suite name="Reports" duration-ms="3148" started-at="2018-03-05T12:30:53Z" finished-at="2018-03-05T12:30:56Z">
     <groups>
     </groups>
-    <test name="ERTPerformanceResult" duration-ms="4482" started-at="2018-03-05T12:24:48Z" finished-at="2018-03-05T12:24:52Z">
-      <class name="com.Cogniphy.Protection.Muthoot.TestSuites.ERTPerformance_Suite">
-        <test-method status="PASS" signature="loadlog4j()[pri:0, instance:com.Cogniphy.Protection.Muthoot.TestSuites.ERTPerformance_Suite@7b69c6ba]" name="loadlog4j" is-config="true" duration-ms="47" started-at="2018-03-05T17:54:48Z" finished-at="2018-03-05T17:54:48Z">
+    <test name="ReportsResult" duration-ms="3148" started-at="2018-03-05T12:30:53Z" finished-at="2018-03-05T12:30:56Z">
+      <class name="com.Cogniphy.Protection.Muthoot.TestSuites.Reports_TestSuite">
+        <test-method status="PASS" signature="loadlog4j()[pri:0, instance:com.Cogniphy.Protection.Muthoot.TestSuites.Reports_TestSuite@7b69c6ba]" name="loadlog4j" is-config="true" duration-ms="31" started-at="2018-03-05T18:00:53Z" finished-at="2018-03-05T18:00:53Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loadlog4j -->
-        <test-method status="FAIL" signature="beforeClass()[pri:0, instance:com.Cogniphy.Protection.Muthoot.TestSuites.ERTPerformance_Suite@7b69c6ba]" name="beforeClass" is-config="true" duration-ms="0" started-at="2018-03-05T17:54:48Z" finished-at="2018-03-05T17:54:48Z">
+        <test-method status="FAIL" signature="beforeClass()[pri:0, instance:com.Cogniphy.Protection.Muthoot.TestSuites.Reports_TestSuite@7b69c6ba]" name="beforeClass" is-config="true" duration-ms="0" started-at="2018-03-05T18:00:53Z" finished-at="2018-03-05T18:00:53Z">
           <exception class="org.openqa.selenium.NoSuchWindowException">
             <message>
               <![CDATA[no such window: target window already closed
@@ -23,7 +23,7 @@ Build info: version: '3.8.1', revision: '6e95a6684b', time: '2017-12-01T18:33:54
 System info: host: 'USER', ip: '192.168.2.109', os.name: 'Windows 8.1', os.arch: 'amd64', os.version: '6.3', java.version: '1.8.0_91'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
 Capabilities {acceptSslCerts: true, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.33.506120 (e3e53437346286..., userDataDir: C:\Users\121\AppData\Local\...}, cssSelectorsEnabled: true, databaseEnabled: false, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 64.0.3282.186, webStorageEnabled: true}
-Session ID: 84c8c3934a5ab5de7957e005c782785f
+Session ID: 14829a59b1a0eae4f9d9ab2171177ec8
 *** Element info: {Using=id, value=username}]]>
             </message>
             <full-stacktrace>
@@ -36,7 +36,7 @@ Build info: version: '3.8.1', revision: '6e95a6684b', time: '2017-12-01T18:33:54
 System info: host: 'USER', ip: '192.168.2.109', os.name: 'Windows 8.1', os.arch: 'amd64', os.version: '6.3', java.version: '1.8.0_91'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
 Capabilities {acceptSslCerts: true, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.33.506120 (e3e53437346286..., userDataDir: C:\Users\121\AppData\Local\...}, cssSelectorsEnabled: true, databaseEnabled: false, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 64.0.3282.186, webStorageEnabled: true}
-Session ID: 84c8c3934a5ab5de7957e005c782785f
+Session ID: 14829a59b1a0eae4f9d9ab2171177ec8
 *** Element info: {Using=id, value=username}
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
@@ -86,159 +86,111 @@ Session ID: 84c8c3934a5ab5de7957e005c782785f
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeClass -->
-        <test-method status="SKIP" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:com.Cogniphy.Protection.Muthoot.TestSuites.ERTPerformance_Suite@7b69c6ba]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2018-03-05T17:54:52Z" finished-at="2018-03-05T17:54:52Z">
+        <test-method status="SKIP" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.Cogniphy.Protection.Muthoot.TestSuites.Reports_TestSuite@7b69c6ba]" name="afterMethod" is-config="true" duration-ms="0" started-at="2018-03-05T18:00:56Z" finished-at="2018-03-05T18:00:56Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="SKIP" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:com.Cogniphy.Protection.Muthoot.TestSuites.Reports_TestSuite@7b69c6ba]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2018-03-05T18:00:56Z" finished-at="2018-03-05T18:00:56Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method status="SKIP" signature="TC_001_Login()[pri:0, instance:com.Cogniphy.Protection.Muthoot.TestSuites.ERTPerformance_Suite@7b69c6ba]" name="TC_001_Login" duration-ms="1" started-at="2018-03-05T17:54:52Z" finished-at="2018-03-05T17:54:52Z">
+        <test-method status="SKIP" signature="TC_001_Login()[pri:0, instance:com.Cogniphy.Protection.Muthoot.TestSuites.Reports_TestSuite@7b69c6ba]" name="TC_001_Login" duration-ms="0" started-at="2018-03-05T18:00:56Z" finished-at="2018-03-05T18:00:56Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TC_001_Login -->
-        <test-method status="SKIP" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.Cogniphy.Protection.Muthoot.TestSuites.ERTPerformance_Suite@7b69c6ba]" name="afterMethod" is-config="true" duration-ms="0" started-at="2018-03-05T17:54:52Z" finished-at="2018-03-05T17:54:52Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterMethod -->
-        <test-method status="SKIP" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:com.Cogniphy.Protection.Muthoot.TestSuites.ERTPerformance_Suite@7b69c6ba]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2018-03-05T17:54:52Z" finished-at="2018-03-05T17:54:52Z">
+        <test-method status="SKIP" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:com.Cogniphy.Protection.Muthoot.TestSuites.Reports_TestSuite@7b69c6ba]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2018-03-05T18:00:56Z" finished-at="2018-03-05T18:00:56Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method status="SKIP" signature="TC_002_Verify_the_Performance_Report_in_the_submenu()[pri:0, instance:com.Cogniphy.Protection.Muthoot.TestSuites.ERTPerformance_Suite@7b69c6ba]" name="TC_002_Verify_the_Performance_Report_in_the_submenu" duration-ms="2" started-at="2018-03-05T17:54:52Z" finished-at="2018-03-05T17:54:52Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TC_002_Verify_the_Performance_Report_in_the_submenu -->
-        <test-method status="SKIP" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.Cogniphy.Protection.Muthoot.TestSuites.ERTPerformance_Suite@7b69c6ba]" name="afterMethod" is-config="true" duration-ms="0" started-at="2018-03-05T17:54:52Z" finished-at="2018-03-05T17:54:52Z">
+        <test-method status="SKIP" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.Cogniphy.Protection.Muthoot.TestSuites.Reports_TestSuite@7b69c6ba]" name="afterMethod" is-config="true" duration-ms="0" started-at="2018-03-05T18:00:56Z" finished-at="2018-03-05T18:00:56Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method status="SKIP" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:com.Cogniphy.Protection.Muthoot.TestSuites.ERTPerformance_Suite@7b69c6ba]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2018-03-05T17:54:52Z" finished-at="2018-03-05T17:54:52Z">
+        <test-method status="SKIP" signature="TC_002_Validate_ERTReported_At_Time_with_Daily_Report()[pri:0, instance:com.Cogniphy.Protection.Muthoot.TestSuites.Reports_TestSuite@7b69c6ba]" name="TC_002_Validate_ERTReported_At_Time_with_Daily_Report" duration-ms="0" started-at="2018-03-05T18:00:56Z" finished-at="2018-03-05T18:00:56Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC_002_Validate_ERTReported_At_Time_with_Daily_Report -->
+        <test-method status="SKIP" signature="TC_003_Validate_No_of_Branches_Visted()[pri:0, instance:com.Cogniphy.Protection.Muthoot.TestSuites.Reports_TestSuite@7b69c6ba]" name="TC_003_Validate_No_of_Branches_Visted" duration-ms="16" started-at="2018-03-05T18:00:56Z" finished-at="2018-03-05T18:00:56Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC_003_Validate_No_of_Branches_Visted -->
+        <test-method status="SKIP" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:com.Cogniphy.Protection.Muthoot.TestSuites.Reports_TestSuite@7b69c6ba]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2018-03-05T18:00:56Z" finished-at="2018-03-05T18:00:56Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method status="SKIP" signature="TC_003_verify_Tab_Status()[pri:0, instance:com.Cogniphy.Protection.Muthoot.TestSuites.ERTPerformance_Suite@7b69c6ba]" name="TC_003_verify_Tab_Status" duration-ms="2" started-at="2018-03-05T17:54:52Z" finished-at="2018-03-05T17:54:52Z">
+        <test-method status="SKIP" signature="TC_004_IncidentRoom_BranchNames_Validation()[pri:0, instance:com.Cogniphy.Protection.Muthoot.TestSuites.Reports_TestSuite@7b69c6ba]" name="TC_004_IncidentRoom_BranchNames_Validation" duration-ms="0" started-at="2018-03-05T18:00:56Z" finished-at="2018-03-05T18:00:56Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- TC_003_verify_Tab_Status -->
-        <test-method status="SKIP" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.Cogniphy.Protection.Muthoot.TestSuites.ERTPerformance_Suite@7b69c6ba]" name="afterMethod" is-config="true" duration-ms="0" started-at="2018-03-05T17:54:52Z" finished-at="2018-03-05T17:54:52Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterMethod -->
-        <test-method status="SKIP" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:com.Cogniphy.Protection.Muthoot.TestSuites.ERTPerformance_Suite@7b69c6ba]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2018-03-05T17:54:52Z" finished-at="2018-03-05T17:54:52Z">
+        </test-method> <!-- TC_004_IncidentRoom_BranchNames_Validation -->
+        <test-method status="SKIP" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:com.Cogniphy.Protection.Muthoot.TestSuites.Reports_TestSuite@7b69c6ba]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2018-03-05T18:00:56Z" finished-at="2018-03-05T18:00:56Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method status="SKIP" signature="TC_004_verify_ManualAtendance_column()[pri:0, instance:com.Cogniphy.Protection.Muthoot.TestSuites.ERTPerformance_Suite@7b69c6ba]" name="TC_004_verify_ManualAtendance_column" duration-ms="2" started-at="2018-03-05T17:54:52Z" finished-at="2018-03-05T17:54:52Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TC_004_verify_ManualAtendance_column -->
-        <test-method status="SKIP" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.Cogniphy.Protection.Muthoot.TestSuites.ERTPerformance_Suite@7b69c6ba]" name="afterMethod" is-config="true" duration-ms="0" started-at="2018-03-05T17:54:52Z" finished-at="2018-03-05T17:54:52Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterMethod -->
-        <test-method status="SKIP" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:com.Cogniphy.Protection.Muthoot.TestSuites.ERTPerformance_Suite@7b69c6ba]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2018-03-05T17:54:52Z" finished-at="2018-03-05T17:54:52Z">
+        <test-method status="SKIP" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:com.Cogniphy.Protection.Muthoot.TestSuites.Reports_TestSuite@7b69c6ba]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2018-03-05T18:00:56Z" finished-at="2018-03-05T18:00:56Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method status="SKIP" signature="TC_005_verify_Biometric_Atendance_column()[pri:0, instance:com.Cogniphy.Protection.Muthoot.TestSuites.ERTPerformance_Suite@7b69c6ba]" name="TC_005_verify_Biometric_Atendance_column" duration-ms="1" started-at="2018-03-05T17:54:52Z" finished-at="2018-03-05T17:54:52Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TC_005_verify_Biometric_Atendance_column -->
-        <test-method status="SKIP" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.Cogniphy.Protection.Muthoot.TestSuites.ERTPerformance_Suite@7b69c6ba]" name="afterMethod" is-config="true" duration-ms="0" started-at="2018-03-05T17:54:52Z" finished-at="2018-03-05T17:54:52Z">
+        <test-method status="SKIP" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.Cogniphy.Protection.Muthoot.TestSuites.Reports_TestSuite@7b69c6ba]" name="afterMethod" is-config="true" duration-ms="0" started-at="2018-03-05T18:00:56Z" finished-at="2018-03-05T18:00:56Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method status="SKIP" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:com.Cogniphy.Protection.Muthoot.TestSuites.ERTPerformance_Suite@7b69c6ba]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2018-03-05T17:54:52Z" finished-at="2018-03-05T17:54:52Z">
+        <test-method status="SKIP" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.Cogniphy.Protection.Muthoot.TestSuites.Reports_TestSuite@7b69c6ba]" name="afterMethod" is-config="true" duration-ms="0" started-at="2018-03-05T18:00:56Z" finished-at="2018-03-05T18:00:56Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="SKIP" signature="TC_005_ADT_AlarmTime_Vrfction_BN_Summ_ND_IncRoom()[pri:0, instance:com.Cogniphy.Protection.Muthoot.TestSuites.Reports_TestSuite@7b69c6ba]" name="TC_005_ADT_AlarmTime_Vrfction_BN_Summ_ND_IncRoom" duration-ms="16" started-at="2018-03-05T18:00:56Z" finished-at="2018-03-05T18:00:56Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC_005_ADT_AlarmTime_Vrfction_BN_Summ_ND_IncRoom -->
+        <test-method status="SKIP" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.Cogniphy.Protection.Muthoot.TestSuites.Reports_TestSuite@7b69c6ba]" name="afterMethod" is-config="true" duration-ms="0" started-at="2018-03-05T18:00:56Z" finished-at="2018-03-05T18:00:56Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="SKIP" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:com.Cogniphy.Protection.Muthoot.TestSuites.Reports_TestSuite@7b69c6ba]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2018-03-05T18:00:56Z" finished-at="2018-03-05T18:00:56Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method status="SKIP" signature="TC_006_verify_ADT_Violation()[pri:0, instance:com.Cogniphy.Protection.Muthoot.TestSuites.ERTPerformance_Suite@7b69c6ba]" name="TC_006_verify_ADT_Violation" duration-ms="1" started-at="2018-03-05T17:54:52Z" finished-at="2018-03-05T17:54:52Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TC_006_verify_ADT_Violation -->
-        <test-method status="SKIP" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.Cogniphy.Protection.Muthoot.TestSuites.ERTPerformance_Suite@7b69c6ba]" name="afterMethod" is-config="true" duration-ms="0" started-at="2018-03-05T17:54:52Z" finished-at="2018-03-05T17:54:52Z">
+        <test-method status="SKIP" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.Cogniphy.Protection.Muthoot.TestSuites.Reports_TestSuite@7b69c6ba]" name="afterMethod" is-config="true" duration-ms="0" started-at="2018-03-05T18:00:56Z" finished-at="2018-03-05T18:00:56Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method status="SKIP" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:com.Cogniphy.Protection.Muthoot.TestSuites.ERTPerformance_Suite@7b69c6ba]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2018-03-05T17:54:52Z" finished-at="2018-03-05T17:54:52Z">
+        <test-method status="SKIP" signature="TC_006_ADT_RecievedTime_Verification()[pri:0, instance:com.Cogniphy.Protection.Muthoot.TestSuites.Reports_TestSuite@7b69c6ba]" name="TC_006_ADT_RecievedTime_Verification" duration-ms="0" started-at="2018-03-05T18:00:56Z" finished-at="2018-03-05T18:00:56Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC_006_ADT_RecievedTime_Verification -->
+        <test-method status="SKIP" signature="TC_007_odoMeter_Reading_Valiadtion()[pri:0, instance:com.Cogniphy.Protection.Muthoot.TestSuites.Reports_TestSuite@7b69c6ba]" name="TC_007_odoMeter_Reading_Valiadtion" duration-ms="0" started-at="2018-03-05T18:00:56Z" finished-at="2018-03-05T18:00:56Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC_007_odoMeter_Reading_Valiadtion -->
+        <test-method status="SKIP" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.Cogniphy.Protection.Muthoot.TestSuites.Reports_TestSuite@7b69c6ba]" name="afterMethod" is-config="true" duration-ms="0" started-at="2018-03-05T18:00:56Z" finished-at="2018-03-05T18:00:56Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="SKIP" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:com.Cogniphy.Protection.Muthoot.TestSuites.Reports_TestSuite@7b69c6ba]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2018-03-05T18:00:56Z" finished-at="2018-03-05T18:00:56Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method status="SKIP" signature="TC_007_verify_GaurdCheckList()[pri:0, instance:com.Cogniphy.Protection.Muthoot.TestSuites.ERTPerformance_Suite@7b69c6ba]" name="TC_007_verify_GaurdCheckList" duration-ms="5" started-at="2018-03-05T17:54:52Z" finished-at="2018-03-05T17:54:52Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TC_007_verify_GaurdCheckList -->
-        <test-method status="SKIP" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.Cogniphy.Protection.Muthoot.TestSuites.ERTPerformance_Suite@7b69c6ba]" name="afterMethod" is-config="true" duration-ms="0" started-at="2018-03-05T17:54:52Z" finished-at="2018-03-05T17:54:52Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterMethod -->
-        <test-method status="SKIP" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:com.Cogniphy.Protection.Muthoot.TestSuites.ERTPerformance_Suite@7b69c6ba]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2018-03-05T17:54:52Z" finished-at="2018-03-05T17:54:52Z">
+        <test-method status="SKIP" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:com.Cogniphy.Protection.Muthoot.TestSuites.Reports_TestSuite@7b69c6ba]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2018-03-05T18:00:56Z" finished-at="2018-03-05T18:00:56Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method status="SKIP" signature="TC_008_verify_BranchCheckList()[pri:0, instance:com.Cogniphy.Protection.Muthoot.TestSuites.ERTPerformance_Suite@7b69c6ba]" name="TC_008_verify_BranchCheckList" duration-ms="1" started-at="2018-03-05T17:54:52Z" finished-at="2018-03-05T17:54:52Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TC_008_verify_BranchCheckList -->
-        <test-method status="SKIP" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.Cogniphy.Protection.Muthoot.TestSuites.ERTPerformance_Suite@7b69c6ba]" name="afterMethod" is-config="true" duration-ms="0" started-at="2018-03-05T17:54:52Z" finished-at="2018-03-05T17:54:52Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterMethod -->
-        <test-method status="SKIP" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:com.Cogniphy.Protection.Muthoot.TestSuites.ERTPerformance_Suite@7b69c6ba]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2018-03-05T17:54:52Z" finished-at="2018-03-05T17:54:52Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeMethod -->
-        <test-method status="SKIP" signature="TC_009_verify_BeatDeviation()[pri:0, instance:com.Cogniphy.Protection.Muthoot.TestSuites.ERTPerformance_Suite@7b69c6ba]" name="TC_009_verify_BeatDeviation" duration-ms="2" started-at="2018-03-05T17:54:52Z" finished-at="2018-03-05T17:54:52Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TC_009_verify_BeatDeviation -->
-        <test-method status="SKIP" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.Cogniphy.Protection.Muthoot.TestSuites.ERTPerformance_Suite@7b69c6ba]" name="afterMethod" is-config="true" duration-ms="0" started-at="2018-03-05T17:54:52Z" finished-at="2018-03-05T17:54:52Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterMethod -->
-        <test-method status="SKIP" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:com.Cogniphy.Protection.Muthoot.TestSuites.ERTPerformance_Suite@7b69c6ba]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2018-03-05T17:54:52Z" finished-at="2018-03-05T17:54:52Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeMethod -->
-        <test-method status="SKIP" signature="TC_010_verify_SchedulDeviation()[pri:0, instance:com.Cogniphy.Protection.Muthoot.TestSuites.ERTPerformance_Suite@7b69c6ba]" name="TC_010_verify_SchedulDeviation" duration-ms="1" started-at="2018-03-05T17:54:52Z" finished-at="2018-03-05T17:54:52Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TC_010_verify_SchedulDeviation -->
-        <test-method status="SKIP" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.Cogniphy.Protection.Muthoot.TestSuites.ERTPerformance_Suite@7b69c6ba]" name="afterMethod" is-config="true" duration-ms="0" started-at="2018-03-05T17:54:52Z" finished-at="2018-03-05T17:54:52Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterMethod -->
-        <test-method status="SKIP" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:com.Cogniphy.Protection.Muthoot.TestSuites.ERTPerformance_Suite@7b69c6ba]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2018-03-05T17:54:52Z" finished-at="2018-03-05T17:54:52Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeMethod -->
-        <test-method status="SKIP" signature="TC_011_verify_IncdenPerformance()[pri:0, instance:com.Cogniphy.Protection.Muthoot.TestSuites.ERTPerformance_Suite@7b69c6ba]" name="TC_011_verify_IncdenPerformance" duration-ms="1" started-at="2018-03-05T17:54:52Z" finished-at="2018-03-05T17:54:52Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TC_011_verify_IncdenPerformance -->
-        <test-method status="SKIP" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.Cogniphy.Protection.Muthoot.TestSuites.ERTPerformance_Suite@7b69c6ba]" name="afterMethod" is-config="true" duration-ms="0" started-at="2018-03-05T17:54:52Z" finished-at="2018-03-05T17:54:52Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterMethod -->
-        <test-method status="SKIP" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:com.Cogniphy.Protection.Muthoot.TestSuites.ERTPerformance_Suite@7b69c6ba]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2018-03-05T17:54:52Z" finished-at="2018-03-05T17:54:52Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeMethod -->
-        <test-method status="SKIP" signature="TC_012_verify_CheckInCheckoutDeviation()[pri:0, instance:com.Cogniphy.Protection.Muthoot.TestSuites.ERTPerformance_Suite@7b69c6ba]" name="TC_012_verify_CheckInCheckoutDeviation" duration-ms="1" started-at="2018-03-05T17:54:52Z" finished-at="2018-03-05T17:54:52Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TC_012_verify_CheckInCheckoutDeviation -->
-        <test-method status="SKIP" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.Cogniphy.Protection.Muthoot.TestSuites.ERTPerformance_Suite@7b69c6ba]" name="afterMethod" is-config="true" duration-ms="0" started-at="2018-03-05T17:54:52Z" finished-at="2018-03-05T17:54:52Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterMethod -->
-        <test-method status="SKIP" signature="toEndTest()[pri:0, instance:com.Cogniphy.Protection.Muthoot.TestSuites.ERTPerformance_Suite@7b69c6ba]" name="toEndTest" is-config="true" duration-ms="0" started-at="2018-03-05T17:54:52Z" finished-at="2018-03-05T17:54:52Z">
+        <test-method status="SKIP" signature="toEndTest()[pri:0, instance:com.Cogniphy.Protection.Muthoot.TestSuites.Reports_TestSuite@7b69c6ba]" name="toEndTest" is-config="true" duration-ms="0" started-at="2018-03-05T18:00:56Z" finished-at="2018-03-05T18:00:56Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- toEndTest -->
-        <test-method status="SKIP" signature="afterTest()[pri:0, instance:com.Cogniphy.Protection.Muthoot.TestSuites.ERTPerformance_Suite@7b69c6ba]" name="afterTest" is-config="true" duration-ms="0" started-at="2018-03-05T17:54:52Z" finished-at="2018-03-05T17:54:52Z">
+        <test-method status="SKIP" signature="afterTest()[pri:0, instance:com.Cogniphy.Protection.Muthoot.TestSuites.Reports_TestSuite@7b69c6ba]" name="afterTest" is-config="true" duration-ms="0" started-at="2018-03-05T18:00:56Z" finished-at="2018-03-05T18:00:56Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterTest -->
-      </class> <!-- com.Cogniphy.Protection.Muthoot.TestSuites.ERTPerformance_Suite -->
-    </test> <!-- ERTPerformanceResult -->
-  </suite> <!-- ERTPerformance -->
+        <test-method status="SKIP" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.Cogniphy.Protection.Muthoot.TestSuites.Reports_TestSuite@7b69c6ba]" name="afterMethod" is-config="true" duration-ms="0" started-at="2018-03-05T18:00:56Z" finished-at="2018-03-05T18:00:56Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="SKIP" signature="TC_008_attendanceValidationForeachERT()[pri:0, instance:com.Cogniphy.Protection.Muthoot.TestSuites.Reports_TestSuite@7b69c6ba]" name="TC_008_attendanceValidationForeachERT" duration-ms="0" started-at="2018-03-05T18:00:56Z" finished-at="2018-03-05T18:00:56Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC_008_attendanceValidationForeachERT -->
+      </class> <!-- com.Cogniphy.Protection.Muthoot.TestSuites.Reports_TestSuite -->
+    </test> <!-- ReportsResult -->
+  </suite> <!-- Reports -->
 </testng-results>

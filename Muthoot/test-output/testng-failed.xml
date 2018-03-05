@@ -1,31 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="Failed suite [ERTPerformance]">
-  <test name="ERTPerformanceResult">
+<suite name="Failed suite [Reports]">
+  <test name="ReportsResult">
     <classes>
-      <class name="com.Cogniphy.Protection.Muthoot.TestSuites.ERTPerformance_Suite"/>
+      <class name="com.Cogniphy.Protection.Muthoot.TestSuites.Reports_TestSuite"/>
     </classes>
-  </test> <!-- ERTPerformanceResult -->
-  <test name="ERTPerformanceResult(failed)">
+  </test> <!-- ReportsResult -->
+  <test name="ReportsResult(failed)">
     <classes>
-      <class name="com.Cogniphy.Protection.Muthoot.TestSuites.ERTPerformance_Suite">
+      <class name="com.Cogniphy.Protection.Muthoot.TestSuites.Reports_TestSuite">
         <methods>
-          <include name="TC_001_Login"/>
           <include name="beforeClass"/>
-          <include name="TC_002_Verify_the_Performance_Report_in_the_submenu"/>
-          <include name="TC_003_verify_Tab_Status"/>
-          <include name="TC_008_verify_BranchCheckList"/>
-          <include name="TC_011_verify_IncdenPerformance"/>
+          <include name="TC_001_Login"/>
+          <include name="TC_002_Validate_ERTReported_At_Time_with_Daily_Report"/>
+          <include name="TC_004_IncidentRoom_BranchNames_Validation"/>
+          <include name="TC_008_attendanceValidationForeachERT"/>
+          <include name="TC_003_Validate_No_of_Branches_Visted"/>
+          <include name="TC_005_ADT_AlarmTime_Vrfction_BN_Summ_ND_IncRoom"/>
           <include name="loadlog4j"/>
-          <include name="TC_004_verify_ManualAtendance_column"/>
-          <include name="TC_007_verify_GaurdCheckList"/>
-          <include name="TC_012_verify_CheckInCheckoutDeviation"/>
-          <include name="TC_006_verify_ADT_Violation"/>
-          <include name="TC_009_verify_BeatDeviation"/>
-          <include name="TC_005_verify_Biometric_Atendance_column"/>
-          <include name="TC_010_verify_SchedulDeviation"/>
+          <include name="TC_006_ADT_RecievedTime_Verification"/>
+          <include name="TC_007_odoMeter_Reading_Valiadtion"/>
         </methods>
-      </class> <!-- com.Cogniphy.Protection.Muthoot.TestSuites.ERTPerformance_Suite -->
+      </class> <!-- com.Cogniphy.Protection.Muthoot.TestSuites.Reports_TestSuite -->
     </classes>
-  </test> <!-- ERTPerformanceResult(failed) -->
-</suite> <!-- Failed suite [ERTPerformance] -->
+  </test> <!-- ReportsResult(failed) -->
+</suite> <!-- Failed suite [Reports] -->
